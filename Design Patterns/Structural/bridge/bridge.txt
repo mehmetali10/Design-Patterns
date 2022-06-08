@@ -1,0 +1,24 @@
+                Bridge Design Pattern
+This pattern is also known as the handle/body pattern, in which you separate an implementation from its abstraction and build separate inheritance structures for them. 
+Finally, you connect them through a bridge. 
+
+You must note that the abstraction and the implementation can be represented either through an interface or an abstract class, 
+but the abstraction contains a reference to its implementer. 
+Normally, a child of an abstraction is called a refined abstraction and a child of an implementation is called a concrete implementation.
+
+This bridge interface makes the functionality of concrete classes independent from the interface implementer classes. 
+You can alter different kinds of classes structurally without affecting each other.
+
+
+                REAL WORLD EXAMPLE
+In a software product development company, the development team and the marketing team both play a crucial role.
+
+Marketing teams do market surveys and gather customers’ needs, which may vary depending on the nature of the customers. 
+
+Development teams implement those requirements in their products to fulfill the customers’ needs.
+
+Any change (e.g., in the operational strategy) in one team should not have a direct impact on the other team. 
+
+Also, when new requirements come from the customer side, it should not change the way that developers work in their organization. 
+
+In a software organization, the marketing team plays the role of the bridge between the clients and the development team.
