@@ -23,6 +23,7 @@ This in turn makes the subsystem usage easier and more manageable.
 
 
                     REAL WORLD EXAMPLE
+                    
 Suppose that you are going to organize a birthday party, and you plan to invite 500 people.
 Nowadays, you can go to any party organizer and let them know the key information—
 party type, 
@@ -36,6 +37,20 @@ So, you do not need to buy items from the store or decorate the party hall yours
 
 
                      COMPUTER WORLD EXAMPLE
+                     
 Think about a situation where you use a method from a library (in the context of a programming language). 
 You do not care how the method is implemented in the library. 
 You just call the method to experiment the easy usage of it.
+
+
+                      
+            What are key advantages of using a facade design pattern
+                 
+If a system consists of many subsystems, managing all those subsystems becomes very tough and 
+clients may find their life difficult to communicate separately with each of these subsystems. 
+In this scenario, facade patterns are very much handy. It provides a simple interface to clients. 
+In simple words, instead of presenting complex subsystems, you present one simplified interface to clients. 
+This approach also promotes weak coupling by separating a client from the subsystems.
+
+It can also help you to reduce the number of objects that a client needs to deal with.
+                      
