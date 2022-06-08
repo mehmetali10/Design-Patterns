@@ -1,0 +1,41 @@
+                     FACADE DESIGN PATTERNS
+
+Provide a unified interface to a set of interfaces in a subsystem. 
+Facade defines a higher-level interface that makes the subsystem easier to use.
+
+Basically, this is saying that we need to interact with a system that is easier than the current method, 
+or we need to use the system in a particular way (such as using a 3D drawing program in a 2D way). 
+We can build such a method of interaction because we only need to use a subset of the system in question.
+
+Faxades make a client's life easier. 
+Suppose that there is a complex system where multuiple objects need to perform a series of tasks, 
+and you need to interact with the system.
+
+In a situation like this, facade can provide you a simplified interface that takes care of everything
+(the creation of those objects, providing the correct sequence of tasks, etc.). 
+
+As a result, instead of interacting with multiple objects in a complicated way, you just interact with a single object. 
+
+The Facade pattern is useful in such situations. 
+The Façade pattern provides a higher level, simplified interface for a subsystem resulting in reduced complexity and dependency. 
+This in turn makes the subsystem usage easier and more manageable.
+
+
+
+                    REAL WORLD EXAMPLE
+Suppose that you are going to organize a birthday party, and you plan to invite 500 people.
+Nowadays, you can go to any party organizer and let them know the key information—
+party type, 
+the date and time, 
+number of attendees, and so forth. 
+The organizer does the rest for you. 
+You do not need to think about 
+how the hall will be decorated, 
+whether attendees will get their food from a buffet table or be served by the waiter, and so forth. 
+So, you do not need to buy items from the store or decorate the party hall yourself—you just pay the organizer and let them do the job properly.
+
+
+                     COMPUTER WORLD EXAMPLE
+Think about a situation where you use a method from a library (in the context of a programming language). 
+You do not care how the method is implemented in the library. 
+You just call the method to experiment the easy usage of it.
