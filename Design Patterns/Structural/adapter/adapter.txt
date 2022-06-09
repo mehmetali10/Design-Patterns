@@ -1,0 +1,46 @@
+                          ADAPTER DESIGN PATTERN
+Definition: 
+Convert the interface of a class into another interface that clients expect. 
+Adapter lets classes work together that could not otherwise because of incompatible interfaces.
+
+
+                            REAL WORLD EXAMPLE
+A very common use of this pattern can be seen in an electrical outlet adapter/AC power adapter in international travels. 
+These adapters act as a middleman when an electronic device (let’s say, a laptop) that 
+accepts a US power supply can be plugged into a European power outlet.
+
+Consider another example. Language Translator. 
+If you are Japanese and you have to talk with Russian, it’s obvious that both don’t understand each other’s languages. 
+Therefore, we have to find a translator who knows both Japanese and Russian. The translator acts as the adapter in this case.
+
+
+The adapter pattern lets classes work together that couldn’t otherwise because of incompatible interfaces.
+    “Convert the interface of a class into another interface expected by a client class.”
+    Used to provide a new interface to existing legacy components (Interface engineering, reengineering).
+
+
+Two adapter patterns:
+    Class adapter:
+            Uses multiple inheritance to adapt one interface to another
+    Object adapter: 
+            Uses single inheritance and delegation
+
+
+Object adapters are much more frequent.
+We cover only object adapters (and call them adapters).
+
+
+
+                         Components of Adapter Pattern
+
+CLİENT (A class which user uses) – Uses the ‘Target’ interface to communicate with the outer world
+TARGET (A class/interface that you want to convert to)– The interface used by the client. This is client domain-specific.
+ADAPTER – This is the component which converts the requests and responses as required by the two incompatible systems
+ADAPTEE (A class that is being adapted) – The interface in the receiving end which associate or inherits from adapter class
+
+
+This is a less used approach due to its limitations in implementation. 
+In this approach, the class ‘Adapter’ sub-classes both ‘Target’ and ‘Adaptee’ interfaces. 
+Adapter class overrides the methods in ‘Target’ interface so that requests can be readily received without any modification. 
+On the other hand, the  ‘Adaptee’ are also sub-classed passing the request right at adapter without delegating. 
+Thus, class adapter approach uses inheritance to implement the code.
