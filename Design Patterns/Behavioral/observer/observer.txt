@@ -1,0 +1,42 @@
+                            Observer Design Pattern
+Definition: 
+Defines a “one-to-many” dependency between objects so that when one object changes state, 
+all its dependents are notified and updated automatically
+
+In this pattern, there are many observers (objects) that are observing a particular subject (also an object). 
+Observers register themselves to a subject to get a notification when there is a change made inside that subject. 
+When they lose interest of the subject, they simply unregister from the subject. 
+
+It is also referred to as the publish-subscribe pattern.
+
+The whole idea can be summarized as follows: Using this pattern, 
+an object (subject) can send notifications to multiple observers (a set of objects) at the same time.
+
+
+Example Scenarios:
+-when a friend shares a status or a photo, users can be notified
+-when the price of a product is reduced, users receive notifications
+
+Step 1. Observers are requesting a subject to get notifications
+Step 2. The subject grants the requests and the connection is established
+Step 3. The subject sends notifications to the registered users 
+    (in case a typical event occurs in the subject and it wants to notify others)
+Step 4 (optional). Observer2 does not want to get further notification, so it unregisters itself
+Step 5. Now onward, only Observer1 and Observer3 get notifications from the subject
+
+
+Observer Pattern - Key Players
+    Subject
+        has a list of observers
+        Interfaces for attaching/detaching an observer
+
+    Observer
+        An updating interface for objects that gets notified of changes in a subject
+
+    ConcreteSubject
+        Stores “state of interest” to observers
+        Sends notification when state changes
+
+    ConcreteObserver
+        Implements updating interface
+
