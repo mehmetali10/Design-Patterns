@@ -1,0 +1,41 @@
+                MEDIATOR DESIGN PATTERN
+
+Definition: 
+    Define an object that encapsulates how a set of objects interact. 
+    Mediator promotes loose coupling by keeping objects from referring 
+    to each other explicitly, and it lets you vary their interaction independently.
+
+Concept: 
+    A mediator takes the responsibility of controlling and coordinating 
+    the interactions of a specific group of objects that cannot refer to each other explicitly.
+
+So, you can imagine a mediator as an intermediary through whom these objects talk to each other. 
+This kind of implementation helps reduce the number of interconnections among different objects.
+So, in this design, object communications are encapsulated with a mediator object 
+so that they cannot communicate directly with each other and you reduce the dependencies among them.
+
+
+Real world example
+    An airport control tower is an excellent example of the mediator pattern. 
+    When a flight needs to take off, a series of verifications takes place.  
+    These kinds of verifications conform that all components/parts (which are dependent on each other) are in perfect condition.
+    Also consider when airplane pilots (approaching or departing the terminal area) communicate with the towers. 
+    They do not explicitly communicate with other pilots from different airlines (plane-to-plane communication). 
+    They only send their status to the tower. These towers also send the signals to conform which airplane can take-off or land. 
+    This idea of a central controller is one of the key aspects of the mediator pattern.
+
+
+Common structures of mediator design pattern
+    Mediator: 
+        Defines the interface to provide the communication among Colleague objects.
+    ConcreteMediator: 
+        Maintains the list of the Colleague objects. 
+        It implements the Mediator interface and coordinates the communication among the Colleague objects.    
+    Colleague: 
+        Defines the interface for communication with other Colleagues. 
+    ConcreteColleague1 and ConcreteColleague2: 
+        Implements the Colleague interface. These objects communicate with each other through the mediator.       
+
+
+In this design pattern, object communications are encapsulated with a mediator object 
+so that they cannot communicate directly with each other and you reduce the dependencies among them.
